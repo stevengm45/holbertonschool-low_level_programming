@@ -1,3 +1,2 @@
 #!/bin/bash
-<<<<<<< HEAD
 gcc -o cisfun $CFILE 
