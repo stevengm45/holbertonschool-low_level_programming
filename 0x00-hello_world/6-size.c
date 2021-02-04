@@ -14,5 +14,7 @@ printf("Size of a float: %i byte(s)\n", sizeof(float));
 <<<<<<< HEAD
 return (0);
 =======
+  
+return (0); 
 >>>>>>> 8c4833b1a4c7e15dd0be9e1b948a27211f6737e6
 }
