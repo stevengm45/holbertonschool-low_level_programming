@@ -6,11 +6,6 @@
  */
 int main(void)
 {
-int intType;
-float floatType;
-double doubleType;
-char charType;
-
 printf("Size of int: %i bytes\n", sizeof(intType));
 printf("Size of float: %i bytes\n", sizeof(floatType));
 printf("Size of double: %i bytes\n", sizeof(doubleType));
