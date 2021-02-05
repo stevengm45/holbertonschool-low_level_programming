@@ -11,9 +11,9 @@ printf("Size of an int: %i byte(s)\n", sizeof(int));
 printf("Size of a long int: %i byte(s)\n", sizeof(long int));
 printf("Size of a long long int: %i byte(s)\n", sizeof(long long int));
 printf("Size of a float: %i byte(s)\n", sizeof(float));
-<<<<<<< HEAD
+ << << << < HEAD
 return (0);
-=======
+ == == == =
 return (0);
->>>>>>> 8c4833b1a4c7e15dd0be9e1b948a27211f6737e6
+>> >> >> > 8c4833b1a4c7e15dd0be9e1b948a27211f6737e6
 }
