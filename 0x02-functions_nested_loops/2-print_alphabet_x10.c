@@ -12,10 +12,9 @@ while (i == 9)
 int j = 97;
 while (j < 122)
 {
-_putchar(j);
+_putchar('\n',j);
 j++;
 }
-_putchar('\n');
 i++;
 }
 }
