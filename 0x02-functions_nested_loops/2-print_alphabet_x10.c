@@ -14,8 +14,8 @@ while (j < 122)
 {
 _putchar(j);
 j++;
-_putchar('\n');
 }
+_putchar('\n');
 i++;
 }
 }
