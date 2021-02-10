@@ -2,7 +2,7 @@
 /**
  * print_alphabet_x10 - This function print alphabet x10
  *
- * Return: Always 0.
+ * Return: 0.
  */
 void print_alphabet_x10(void)
 {
@@ -15,7 +15,7 @@ while (j <= 122)
 _putchar(j);
 j++;
 }
-_putchar('\n'); 
+_putchar('\n');
 i++;
 }
 }
