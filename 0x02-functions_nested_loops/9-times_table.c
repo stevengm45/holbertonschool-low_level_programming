@@ -16,7 +16,7 @@ if (j == 0)
 {
 _putchar(n + 48);
 }
- else if (n < 10)
+else if (n < 10)
 {
 _putchar(32);
 _putchar(n + 48);
