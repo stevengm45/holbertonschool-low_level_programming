@@ -2,7 +2,7 @@
 /**
  * _abs - This is a absolute value
  *
- * @a: This is the entry
+ * @i: This is the entry
  *
  * Return: Always 0.
  */
