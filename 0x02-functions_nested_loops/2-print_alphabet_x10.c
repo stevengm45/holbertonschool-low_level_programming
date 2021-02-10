@@ -10,7 +10,7 @@ int i = 0;
 while (i < 10)
 {
 int j = 97;
-while (j < 122)
+while (j <= 122)
 {
 _putchar(j);
 j++;
