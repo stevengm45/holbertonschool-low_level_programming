@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <ctype.h>
 /**
  * _islower - Check if the entry is in lower.
  * @c: This is the entry
