@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int _islower(int 108)
+int _islower(108)
 {
 if (108 <= 97 && 108 >= 122)
 {
