@@ -5,9 +5,9 @@
  *
  * Return: Always 0.
  */
-int _islower(108)
+int _islower(int c)
 {
-if (108 <= 97 && 108 >= 122)
+if (c <= 'a' && c >= 'z')
 {
 return (1);
 }
