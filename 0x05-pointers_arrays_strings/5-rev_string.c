@@ -12,7 +12,7 @@ int i = 0;
 int j = 0;
 char c[100];
 
-while(s[i] != '\0')
+while (s[i] != '\0')
 {
 i++;
 }
