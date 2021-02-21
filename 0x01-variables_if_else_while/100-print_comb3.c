@@ -1,28 +1,31 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
-
-
-
+/**
+ * main - Imprimir los numeros del 00 a 99 sin repetirse
+ * Return: 0 for success
+ */
 int main(void)
 {
-  int i, j;
+int ch, n, r, i;
 
-  for ( i = 0; i <= 9; i++)
-    {
-      for (j = (i + 1); j <= 9; j++)
-      {
-      putchar(i);
-      putchar(j);
-      if(i != 8 || i != 9)
-	{
-	  putchar(44);
-	  putchar(32);
-      }
-      //j += 1;
-    }
-      //i += 1;
-    }
-  putchar('\n');
-  return(0);
-  
+for (ch = 1; ch < 100; ch++)
+{
+r = ch % 10;
+n = ch / 10;
+i = (r * 10) + n;
+if (ch < i)
+{
+putchar((ch / 10) + '0');
+putchar((ch % 10) + '0');
+if (ch != 89)
+{
+putchar(44);
+putchar(32);
+}
+}
+}
+putchar('\n');
+return (0);
 }
