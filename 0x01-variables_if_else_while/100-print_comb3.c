@@ -8,18 +8,18 @@
  */
 int main(void)
 {
-int ch, n, r, i;
+int i, a, b, c;
 
-for (ch = 1; ch < 100; ch++)
+for (i = 1; i < 100; i++)
 {
-r = ch % 10;
-n = ch / 10;
-i = (r * 10) + n;
-if (ch < i)
+b = i % 10;
+a = i / 10;
+c = (b * 10) + n;
+if (i < c)
 {
-putchar((ch / 10) + '0');
-putchar((ch % 10) + '0');
-if (ch != 89)
+putchar((i / 10) + '0');
+putchar((i % 10) + '0');
+if (i != 89)
 {
 putchar(44);
 putchar(32);
