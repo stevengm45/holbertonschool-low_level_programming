@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *main - infinite loop
+ *main - causes infinite loop
  * Return: 0
  */
 
