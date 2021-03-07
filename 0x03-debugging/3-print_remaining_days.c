@@ -23,9 +23,9 @@ printf("Remaining days: %d\n", 366 - day);
 }
 else
 {
-if (mont == 2 && day == 60)
+if (month == 2 && day == 60)
 {
-printf("Invalid dat: %02d/%02d%/04d\n", day - 31, year);
+printf("Invalid date: %02d/%02d%/04d\n", day - 31, year);
 }
 else
 {
