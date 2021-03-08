@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include "holberton.h"
 
@@ -18,7 +19,6 @@ if (month >= 3 && day >= 60)
 {
 day++;
 }
-
 printf("Day of the year: %d\n", day);
 printf("Remaining days: %d\n", 366 - day);
 }
@@ -26,9 +26,13 @@ else
 {
 if (month == 2 && day == 60)
 {
+<<<<<<< HEAD
 printf("Invalid date: %02d/%02d%/04d\n", month, day - 31, year);
 printf("Invalid date: %02d/%02d%/04d\n", day - 31, year);
 
+=======
+printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
+>>>>>>> ff665bdac12c304bf269fedcfda5eeddc378621f
 }
 else
 {
