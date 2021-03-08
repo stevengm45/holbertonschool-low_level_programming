@@ -1,0 +1,22 @@
+#include "holberton.h"
+/**
+ *_strcat - concatenates tow strings
+ *@src: second string to copy from
+ *@dest: string to be overwritten
+ *Return: pointer to dest
+ */
+char *_strcat(char *dest, char *src)
+{
+int i = 0;
+int j = 0;
+
+for (;dest[i] != '\0'; i++)
+while (src[j] != '\0')
+{
+dest[i] = src[j];
+j++;
+i++;
+}
+dest[i] = src[j];
+return (dest);
+}
