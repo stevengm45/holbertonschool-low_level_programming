@@ -4,7 +4,6 @@
  *
  *@str: the string to print
  */
-
 void puts_half(char *str)
 {
 int i, j;
