@@ -19,7 +19,7 @@ printf("Name: %s\n", d->name);
 //{
 //printf("Name: (nil)\n");
 //}
-printf("Age: %f\n", d->age);
+//printf("Age: %f\n", d->age);
 if (d->owner == NULL)
 {
 printf("Owner: (nil)\n");
