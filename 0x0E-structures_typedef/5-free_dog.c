@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
+#include <stdio.h>
 /**
  * free_dog - free the space of a dog structure
  * @d: the dog
