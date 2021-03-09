@@ -1,7 +1,11 @@
 #ifndef FILEDOG
 #define FILEDOG
-
-
+/**
+ *struct dog - structure dog
+ *@name: pointer to variable for dog´s name
+ *@age: variable float for dog´ age
+ *@owner: pointer to variable for dog´s owner
+ */
 typedef struct dog
 {
 char *name;
