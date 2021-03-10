@@ -17,7 +17,6 @@ int i, j;
 for (i = 0; name[i] != '\0'; i++)
 {
 }
-
 for (j = 0; owner[j] != '\0'; j++)
 {
 }
@@ -39,4 +38,7 @@ return (NULL);
 
 dognew->age = age;
 return (dognew);
+  dognew->age = age;
+  return (dognew);
+
 }
