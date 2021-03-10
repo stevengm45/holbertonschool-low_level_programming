@@ -38,4 +38,10 @@ return (NULL);
 
 dognew->age = age;
 return (dognew);
+{
+free(dognew->name);
+free(dognew->owner);
+free(dognew);
+return (NULL);
+}
 }
