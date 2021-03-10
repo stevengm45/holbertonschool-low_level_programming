@@ -8,7 +8,6 @@
  *@owner: pointer to owner´s name
  *Return: new dog
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *dognew;
@@ -48,8 +47,6 @@ for (j = 0; owner[j] != '\0'; j++)
 dognew->owner[j] = owner[j];
 dognew->owner[j] = '\0';
 
-if (dognew == NULL)
-return (NULL);
 dognew->age = age;
 
 return (dognew);
