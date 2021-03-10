@@ -41,7 +41,6 @@ return (dognew);
 if (dognew->owner == NULL)
 {
 free(dognew->name);
-free(dognew->owner);
 free(dognew);
 return (NULL);
 }
