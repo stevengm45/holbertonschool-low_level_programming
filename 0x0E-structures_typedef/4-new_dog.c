@@ -29,12 +29,15 @@ dognew->name = malloc((i + 1) * sizeof(char));
 if (dognew->name == NULL)
 {
 free(dognew->name);
+free(dognew);
 return (NULL);
 }
 dognew->owner = malloc((j + 1) * sizeof(char));
 if (dognew->owner == NULL)
 {
 free(dognew->owner);
+free(dognew->name);
+free(dognew);
 return (NULL);
 }
 for (i = 0; name[i] != '\0'; i++)
