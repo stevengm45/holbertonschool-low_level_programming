@@ -36,7 +36,8 @@ dognew->owner[j] = '\0';
 if (dognew == NULL)
 return (NULL);
 dognew->age = age;
-/*if ((dognew == NULL) || (dognew->name == NULL) || (dognew->owner == NULL)
+/**
+if ((dognew == NULL) || (dognew->name == NULL) || (dognew->owner == NULL)
 {
 free(dognew->name);
 free(dognew->owner);
