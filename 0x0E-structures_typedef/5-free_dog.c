@@ -1,5 +1,4 @@
 #include "dog.h"
-#include <stdio.h>
 #include <stdlib.h>
 /**
  * free_dog - free the space of a dog structure
@@ -13,6 +12,7 @@ if (d)
 if (d->name)
 free(d->name);
 if (d->owner)
+free(d->owner);
 free(d);
 }
 }
