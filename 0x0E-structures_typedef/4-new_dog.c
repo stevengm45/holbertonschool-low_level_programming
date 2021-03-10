@@ -38,7 +38,4 @@ return (NULL);
 
 dognew->age = age;
 return (dognew);
-  dognew->age = age;
-  return (dognew);
-
 }
