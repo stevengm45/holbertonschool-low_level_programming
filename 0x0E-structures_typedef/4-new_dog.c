@@ -20,6 +20,11 @@ for (j = 0; owner[j] != '\0'; j++)
 {
 }
 dognew = malloc(sizeof(dog_t));
+if (dognew == NULL)
+{
+free(dognew);
+return (NULL);
+}
 dognew->name = malloc((i + 1) * sizeof(char));
 dognew->owner = malloc((j + 1) * sizeof(char));
 
