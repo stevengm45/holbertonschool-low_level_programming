@@ -25,6 +25,7 @@ dognew = malloc(sizeof(dog_t));
 dognew->name = malloc((i + 1) * sizeof(char));
 dognew->owner = malloc((j + i) * sizeof(char));
 
+
 for (i = 0; name[i] != '\0'; i++)
 dognew->name[i] = name[i];
 dognew->name[i] = '\0';
@@ -37,16 +38,6 @@ if (dognew == NULL)
 return (NULL);
 dognew->age = age;
 
-if (dognew->name == NULL)
-{
-  free(dognew);
-  return (NULL);
-}
-if (dognew->owner == NULL)
-{
-free(dognew->name);
-free(dognew);
-return (NULL)
-}
+
 return (dognew);
 }
