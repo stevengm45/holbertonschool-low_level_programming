@@ -35,7 +35,7 @@ for (i = 0; name[i] != '\0'; i++)
 dognew->name[i] = name[i];
 dognew->name[i] = '\0';
 
-for (j = 0; name[j] != '\0'; j++)
+for (j = 0; owner[j] != '\0'; j++)
 dognew->owner[j] = owner[j];
 dognew->owner[j] = '\0';
 
