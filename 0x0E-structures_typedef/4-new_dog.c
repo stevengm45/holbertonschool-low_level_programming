@@ -37,11 +37,12 @@ if (dognew == NULL)
 return (NULL);
 
 dognew->age = age;
-return (dognew);
-if (dognew == NULL)
+
+if (dognew->owner == NULL)
 {
-
+free(dognew->name);
 free(dognew);
-
+return (NULL)
 }
+return (dognew);
 }
