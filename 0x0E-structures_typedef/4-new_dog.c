@@ -26,15 +26,17 @@ free(dognew);
 return (NULL);
 }
 dognew->name = malloc((i + 1) * sizeof(char));
-dognew->owner = malloc((j + 1) * sizeof(char));
-if ((dognew->name == NULL) && (dognew->owner == NULL)
+if (dognew->name == NULL)
 {
 free(dognew->name);
+return (NULL);
+}
+dognew->owner = malloc((j + 1) * sizeof(char));
+if (dognew->owner == NULL)
+{
 free(dognew->owner);
 return (NULL);
 }
-
-
 for (i = 0; name[i] != '\0'; i++)
 dognew->name[i] = name[i];
 dognew->name[i] = '\0';
