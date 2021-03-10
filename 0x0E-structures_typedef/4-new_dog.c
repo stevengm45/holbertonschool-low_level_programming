@@ -35,9 +35,13 @@ dognew->owner[j] = owner[j];
 
 if (dognew == NULL)
 return (NULL);
-
 dognew->age = age;
 
+if (dognew->name == NULL)
+{
+  free(dognew);
+  return (NULL);
+}
 if (dognew->owner == NULL)
 {
 free(dognew->name);
