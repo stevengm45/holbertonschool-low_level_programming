@@ -37,9 +37,7 @@ if (dognew == NULL)
 return (NULL);
 dognew->age = age;
 
-dognew = malloc(sizeof(dog_t));
-dognew->name = malloc((i + 1) * sizeof(char));
-dognew->owner = malloc((j + i) * sizeof(char));
+/*
 if ((dognew == NULL) || (dognew->name == NULL) || (dognew->owner == NULL)
 {
 free(dognew->name);
@@ -47,6 +45,6 @@ free(dognew->owner);
 free(dognew);
 return (NULL);
 }
-
+*/
 return (dognew);
 }
