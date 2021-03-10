@@ -38,10 +38,10 @@ return (NULL);
 
 dognew->age = age;
 return (dognew);
-if (dognew->owner == NULL)
+if (dognew == NULL)
 {
-free(dognew->name);
+
 free(dognew);
-return (NULL);
+
 }
 }
