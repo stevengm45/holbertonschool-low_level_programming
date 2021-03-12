@@ -57,21 +57,19 @@ m list[] = {
 {NULL, NULL},
 };
 va_start(args, format);
-i = 0;
+
 while (format && format[i])
 {
-j = 0;
+
 while (list[j].n != NULL)
 {
-if (format[i] == list[j].n[0])
+
 {
-printf("%s", s);
-list[j].f(args);
-s = ", ";
+
 }
-j++;
+
 }
-i++;
+
 }
 printf("\n");
 va_end(args);
