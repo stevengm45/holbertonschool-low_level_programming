@@ -36,7 +36,8 @@ void _printstring(va_list args)
 char *s;
 s = va_arg(args, char*);
 if (s == NULL)
-printf("%s nil", s);
+s = "(nil)";
+printf("%s", s);
 }
 /**
  * print_all - print all the arguments according with the format
@@ -46,19 +47,21 @@ printf("%s nil", s);
 void print_all(const char * const format, ...)
 {
 va_list args;
-int i = 0;
-int j = 0;
+unsigned int i, j;
 char *s = "";
 m list[] = {
 {"c", _printchar},
 {"i", _printint},
 {"f", _printfloat},
 {"s", _printstring},
+{NULL, NULL},
 };
 va_start(args, format);
+i = 0;
 while (format && format[i])
 {
-while (j < 4)
+j = 0;
+while (list[j].n != NULL)
 {
 if (format[i] == list[j].n[0])
 {
