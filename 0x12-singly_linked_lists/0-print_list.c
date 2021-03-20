@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 {
 unsigned int i;
 
- for (i = 0; !h; i++)
+while (!h)
 {
 if (h->str == NULL)
 {
@@ -21,6 +21,7 @@ else
 {
 printf("[%d] %s\n", h->len, h->str);
 }
+i++;
 h = h->next;
 }
 return (i);
