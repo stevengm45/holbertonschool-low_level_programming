@@ -47,9 +47,10 @@ printf("%s", s);
 void print_all(const char * const format, ...)
 {
 va_list args;
-unsigned int i, j;
+unsigned int i = 0;
+unsigned int j = 0;
 char *s = "";
-m list[] = {
+funct list[] = {
 {"c", _printchar},
 {"i", _printint},
 {"f", _printfloat},
@@ -60,16 +61,18 @@ va_start(args, format);
 
 while (format && format[i])
 {
-
-while (list[j].n != NULL)
+while (j < 4)
 {
-
+if (*list[j].str == format[i])
 {
-
+printf("%s", s);
+list[j].f(args);
+s = ", ";
 }
-
+j++;
 }
-
+j = 0;
+i++;
 }
 printf("\n");
 va_end(args);
