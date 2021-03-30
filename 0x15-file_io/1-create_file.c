@@ -21,5 +21,6 @@ if (fn == -1)
 return (-1);
 
 write(fn, text_content, i);
+close(fn);
 return (1);
 }
